@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangun Datar</title>
+    <link href="/mini project 01/css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+    <!-- navigation menu -->
+<section>
+    <header id="bangundatarsegitiga">
+        <h2>Welcome to Katik</h2>
+        <p>Hai Sobat, Selamat datang di katik :) <br>
+        Sebuah web apps sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    <div class="menu" >
+        <a class="segitiga" href="#bangundatarsegitiga" style="text-decoration: none;">Segitiga</a>
+        <a class="jajargenjang" href="#bangundatarjajargenjang" style="text-decoration: none;">Jajar Genjang</a>
+
+    </div>
+</section>
+
+
+<!-- luas segitiga -->
+<Section class="luassegita">
+    <div class="card">
+        <h2 class="judulsegitiga">Luas Segitiga</h2>
+        <div >
+            <img class="imgluassegitiga"  src="/mini project 01/asset/luas dan keliling.jpg" alt="">
+        </div>
+        <div class="description">
+            <p>Rumus Luas Segitiga yaitu :</p>
+            <p class="rumus"> L = 1/2 x a x t</p>
+            <p>Dimana : <br> L = Luas <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div>
+            <h2 class="hitungluassegitiga">Hitung Luas Segitiga</h2>
+            <form id="hapusluassegitiga">
+            <label for="alas"></label>
+            <input type="number" id="alas" placeholder="masukan panjang alas"><br>
+            <label for="tinggi"></label>
+            <input type="number" id="tinggi" placeholder="masukan tinggi">
+            </form>
+            <p id="rumusluassegitiga"></p>
+            <span id="caraluassegitiga"></span>
+            <p id="hasilluassegitiga"> </p>
+        </div>
+        <div class="hitung">
+        
+            <button onclick="hitungluasbangunsegitiga()">Hitung</button>
+        </div>    
+        <div class="resset">
+            <button onclick="ressetluassegitiga()">Resset</button>
+        </div>
+        
+    </div>
+</Section>
+<br>
+
+
+<!-- keliling segitiga -->
+<section class="Kelilingsegitiga">
+    
+    <div class="cardkeliling">
+        <h2 class="judulsegitiga">Keliling Segitiga</h2>
+        <div >
+            <img class="imgluassegitiga"  src="/mini project 01/asset/luas dan keliling.jpg" alt="">
+
+        </div>
+        <div class="description">
+            <p>Rumus Keliling Segitiga yaitu :</p>
+            <p class="rumus"> K = S1 + S2 + S3 </p>
+            <p>Dimana : <br> K = Keliling <br> S1 = Sisi A <br>S2 = Sisi B <br> S3 = Sisi C </p>
+           
+        </div>
+        <hr >
+    
+        <div id ="action">
+            <h2 class="hitungluassegitiga">Hitung Keliling Segitiga</h2>
+            <form id="hapuskelilingsegitiga">
+            <input type="number" name="sisi1" id="sisi1" placeholder="masukan panjang sisi A"><br>
+            <input type="number" name="sisi2" id="sisi2" placeholder="masukan panjang sisi B "><br>
+            <input type="number" name="sisi3" id="sisi3" placeholder="masukan panjang sisi C "><br>
+            </form>
+
+            <p id="rumuskelilingsegitiga"></p>
+            <span id="carakelilingsegitiga"></span>
+            <p id="hasilkelilingsegitiga"></p>
+        </div>
+        <div class="hitung">
+        
+            <button onclick="hitungkelilingbangunsegitiga()">Hitung</button>
+        </div>    
+        <div class="resset">
+            <button onclick="ressetForm()">Resset</button>
+        </div>
+
+        
+    </div>
+</section>
+    
+
+    <!-- bangun datar jajar genjang -->
+<!-- luas jajar genjang -->
+<section class="luasjajargenjang">
+    <header id="bangundatarjajargenjang">
+        <h2>Welcome to Katik</h2>
+        <p>Hai Sobat, Selamat datang di katik :) <br>
+        Sebuah web apps sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    <div class="menu2" >
+        <a class="segitiga2" href="#bangundatarsegitiga" style="text-decoration: none;">Segitiga</a>
+        <a class="jajargenjang2" href="#bangundatarjajargenjang" style="text-decoration: none;">Jajar Genjang</a>
+
+    </div>
+
+    <div class="card2">
+        <h2 class="juduljajargenjang">Luas Jajar Genjang</h2>
+        <div>
+            <img class="imgjajargenjang"src="/mini project 01/asset/jajar genjang.jpg" alt="segitiga">
+
+        </div>
+        <div class="description2">
+            <p>Rumus Luas Jajar Genjang yaitu :</p>
+            <p class="rumus2"> L = a x t</p>
+            <p>Dimana : <br> L = Luas <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div class="action2">
+            <h2 class="hitungluasjajargenjang">Hitung Luas Jajar Genjang</h2>
+            
+        <form  id="hapusluasjajargenjang">
+            <label for="alas2"></label>
+            <input type="number"  id="alas2" required pattern="1-10000" placeholder="masukan panjang alas"/><br>
+            <label for="tinggi2"></label>
+            <input type="number"  id="tinggi2" placeholder="masukan tinggi"/>
+        </form>
+        </div>
+        <P id="rumusluasjajargenjang"></P>
+        <p id="caraluasjajargenjang"></p>
+        <p id="hasilluasjajargenjang"></p>
+        <div class="hitung2">
+        
+            <button onclick="hitungluasbangunjajargenjang()">Hitung</button>
+        </div>    
+        <div class="resset2">
+            <button onclick="ressetluasjajargenjang()">Resset</button>
+        </div>
+        
+    </div>
+</section>
+<!-- keliling jajar genjang -->
+<section class="kelilingjajargenjang">
+   
+
+    <div class="card2keliling">
+        <h2 class="juduljajargenjang">Keliling Jajar Genjang</h2>
+        <div>
+            <img class="imgjajargenjang"src="/mini project 01/asset/jajar genjang.jpg" alt="segitiga">
+
+        </div>
+        <div class="description2">
+            <p>Rumus Luas Jajar Genjang yaitu :</p>
+            <p class="rumus2"> K =2 (a + t)</p>
+            <p>Dimana : <br> K = Keliling <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div class="action2">
+            <h2 class="hitungluasjajargenjang">Hitung Keliling Jajar Genjang</h2>
+        <form id="hapuskelilingjajargenjang">
+            <input type="number" id="alas3" placeholder="masukan panjang alas"><br>
+            <input type="number"  id="tinggi3" placeholder="masukan tinggi">
+        </form>
+            <p id="rumuskelilingjajargenjang"></p>
+            <p id="carakelilingjajargenjang"></p>
+            <p id="hasilkelilingjajargenjang"></p>
+        </div>
+        <div class="hitung2">
+        
+            <button onclick="hitungkelilingbangunjajargenjang()">Hitung</button>
+        </div>    
+        <div class="resset2">
+            <button onclick="ressetkelilingjajargenjang()">Resset</button>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+ 
+<footer>
+    <p>&copy; 2023 created by Ridho Chaniago</p>
+    <nav>
+      <ul>
+        <li><a  style="text-decoration: none;"  href="https://wa.me/6281276784668">Contact Me</a></li>
+        <li ><a style="text-decoration: none;" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a></li>
+        <li ><a style="text-decoration: none;" href="https://web.facebook.com/ridho12c">Facebook</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/mini project 01/js/index.js" > </script>
+  
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangun Datar</title>
+    <link href="/mini project 01/css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+    <!-- navigation menu -->
+<section>
+    <header id="bangundatarsegitiga">
+        <h2>Welcome to Katik</h2>
+        <p>Hai Sobat, Selamat datang di katik :) <br>
+        Sebuah web apps sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    <div class="menu" >
+        <a class="segitiga" href="#bangundatarsegitiga" style="text-decoration: none;">Segitiga</a>
+        <a class="jajargenjang" href="#bangundatarjajargenjang" style="text-decoration: none;">Jajar Genjang</a>
+
+    </div>
+</section>
+
+
+<!-- luas segitiga -->
+<Section class="luassegita">
+    <div class="card">
+        <h2 class="judulsegitiga">Luas Segitiga</h2>
+        <div >
+            <img class="imgluassegitiga"  src="/mini project 01/asset/luas dan keliling.jpg" alt="">
+        </div>
+        <div class="description">
+            <p>Rumus Luas Segitiga yaitu :</p>
+            <p class="rumus"> L = 1/2 x a x t</p>
+            <p>Dimana : <br> L = Luas <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div>
+            <h2 class="hitungluassegitiga">Hitung Luas Segitiga</h2>
+            <form id="hapusluassegitiga">
+            <label for="alas"></label>
+            <input type="number" id="alas" placeholder="masukan panjang alas"><br>
+            <label for="tinggi"></label>
+            <input type="number" id="tinggi" placeholder="masukan tinggi">
+            </form>
+            <p id="rumusluassegitiga"></p>
+            <span id="caraluassegitiga"></span>
+            <p id="hasilluassegitiga"> </p>
+        </div>
+        <div class="hitung">
+        
+            <button onclick="hitungluasbangunsegitiga()">Hitung</button>
+        </div>    
+        <div class="resset">
+            <button onclick="ressetluassegitiga()">Resset</button>
+        </div>
+        
+    </div>
+</Section>
+<br>
+
+
+<!-- keliling segitiga -->
+<section class="Kelilingsegitiga">
+    
+    <div class="cardkeliling">
+        <h2 class="judulsegitiga">Keliling Segitiga</h2>
+        <div >
+            <img class="imgluassegitiga"  src="/mini project 01/asset/luas dan keliling.jpg" alt="">
+
+        </div>
+        <div class="description">
+            <p>Rumus Keliling Segitiga yaitu :</p>
+            <p class="rumus"> K = S1 + S2 + S3 </p>
+            <p>Dimana : <br> K = Keliling <br> S1 = Sisi A <br>S2 = Sisi B <br> S3 = Sisi C </p>
+           
+        </div>
+        <hr >
+    
+        <div id ="action">
+            <h2 class="hitungluassegitiga">Hitung Keliling Segitiga</h2>
+            <form id="hapuskelilingsegitiga">
+            <input type="number" name="sisi1" id="sisi1" placeholder="masukan panjang sisi A"><br>
+            <input type="number" name="sisi2" id="sisi2" placeholder="masukan panjang sisi B "><br>
+            <input type="number" name="sisi3" id="sisi3" placeholder="masukan panjang sisi C "><br>
+            </form>
+
+            <p id="rumuskelilingsegitiga"></p>
+            <span id="carakelilingsegitiga"></span>
+            <p id="hasilkelilingsegitiga"></p>
+        </div>
+        <div class="hitung">
+        
+            <button onclick="hitungkelilingbangunsegitiga()">Hitung</button>
+        </div>    
+        <div class="resset">
+            <button onclick="ressetForm()">Resset</button>
+        </div>
+
+        
+    </div>
+</section>
+    
+
+    <!-- bangun datar jajar genjang -->
+<!-- luas jajar genjang -->
+<section class="luasjajargenjang">
+    <header id="bangundatarjajargenjang">
+        <h2>Welcome to Katik</h2>
+        <p>Hai Sobat, Selamat datang di katik :) <br>
+        Sebuah web apps sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+    <div class="menu2" >
+        <a class="segitiga2" href="#bangundatarsegitiga" style="text-decoration: none;">Segitiga</a>
+        <a class="jajargenjang2" href="#bangundatarjajargenjang" style="text-decoration: none;">Jajar Genjang</a>
+
+    </div>
+
+    <div class="card2">
+        <h2 class="juduljajargenjang">Luas Jajar Genjang</h2>
+        <div>
+            <img class="imgjajargenjang"src="/mini project 01/asset/jajar genjang.jpg" alt="segitiga">
+
+        </div>
+        <div class="description2">
+            <p>Rumus Luas Jajar Genjang yaitu :</p>
+            <p class="rumus2"> L = a x t</p>
+            <p>Dimana : <br> L = Luas <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div class="action2">
+            <h2 class="hitungluasjajargenjang">Hitung Luas Jajar Genjang</h2>
+            
+        <form  id="hapusluasjajargenjang">
+            <label for="alas2"></label>
+            <input type="number"  id="alas2" required pattern="1-10000" placeholder="masukan panjang alas"/><br>
+            <label for="tinggi2"></label>
+            <input type="number"  id="tinggi2" placeholder="masukan tinggi"/>
+        </form>
+        </div>
+        <P id="rumusluasjajargenjang"></P>
+        <p id="caraluasjajargenjang"></p>
+        <p id="hasilluasjajargenjang"></p>
+        <div class="hitung2">
+        
+            <button onclick="hitungluasbangunjajargenjang()">Hitung</button>
+        </div>    
+        <div class="resset2">
+            <button onclick="ressetluasjajargenjang()">Resset</button>
+        </div>
+        
+    </div>
+</section>
+<!-- keliling jajar genjang -->
+<section class="kelilingjajargenjang">
+   
+
+    <div class="card2keliling">
+        <h2 class="juduljajargenjang">Keliling Jajar Genjang</h2>
+        <div>
+            <img class="imgjajargenjang"src="/mini project 01/asset/jajar genjang.jpg" alt="segitiga">
+
+        </div>
+        <div class="description2">
+            <p>Rumus Luas Jajar Genjang yaitu :</p>
+            <p class="rumus2"> K =2 (a + t)</p>
+            <p>Dimana : <br> K = Keliling <br> a = Panjang Alas <br> t = Tinggi</p>
+           
+        </div>
+        <hr >
+        <div class="action2">
+            <h2 class="hitungluasjajargenjang">Hitung Keliling Jajar Genjang</h2>
+        <form id="hapuskelilingjajargenjang">
+            <input type="number" id="alas3" placeholder="masukan panjang alas"><br>
+            <input type="number"  id="tinggi3" placeholder="masukan tinggi">
+        </form>
+            <p id="rumuskelilingjajargenjang"></p>
+            <p id="carakelilingjajargenjang"></p>
+            <p id="hasilkelilingjajargenjang"></p>
+        </div>
+        <div class="hitung2">
+        
+            <button onclick="hitungkelilingbangunjajargenjang()">Hitung</button>
+        </div>    
+        <div class="resset2">
+            <button onclick="ressetkelilingjajargenjang()">Resset</button>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+ 
+<footer>
+    <p>&copy; 2023 created by Ridho Chaniago</p>
+    <nav>
+      <ul>
+        <li><a  style="text-decoration: none;"  href="https://wa.me/6281276784668">Contact Me</a></li>
+        <li ><a style="text-decoration: none;" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a></li>
+        <li ><a style="text-decoration: none;" href="https://web.facebook.com/ridho12c">Facebook</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="/mini project 01/js/index.js" > </script>
+  
+</body>
+>>>>>>> d3e4a2a847448d89d5f6ee5cd919c4ebb6cf9922
+</html>

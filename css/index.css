@@ -1,0 +1,313 @@
+
+/* style header */
+header , .menu{
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    color:white;
+
+}
+.segitiga{
+    background-color: cornflowerblue;
+    display: block;
+    color:aliceblue;
+    padding:5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.imgluassegitiga{
+    display:flex;
+    width: 400px;
+    margin:auto;
+    
+}
+.jajargenjang{
+    display: block;
+    color:cornflowerblue;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom:20PX;
+}
+
+/* style deskripsi */
+.card {
+    display: block;
+    border: solid blue 1px;
+    box-shadow: -7px 8px 10px -2px rgba(0,0,0,0.8);
+
+
+}
+.cardkeliling {
+    display: block;
+    border: solid blue 1px;
+    box-shadow: -7px 8px 10px -2px rgba(0,0,0,0.8);
+    margin-bottom: 1000px;
+
+}
+
+.card2keliling {
+    display: block;
+    border: solid cornflowerblue 1px;
+    box-shadow: -7px 8px 10px -2px rgba(0,0,0,0.8);
+    margin-bottom: 50px;
+    margin-top: 10px;
+
+}
+
+.judulsegitiga{
+    background-color:cornflowerblue;
+    padding: 0px;
+    margin: 0px;
+    /* align-content: center; */
+    text-align: center;
+    display: grid;
+    color: white;
+    padding: 10px;
+}
+.description {
+    padding :10px;
+}
+.rumus{
+    text-align: center;
+    font-weight: bold;
+}
+hr{
+    border-color: lightgrey;
+}
+
+/* style perhitungan */
+.hitungluassegitiga{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+#alas{
+    width: -webkit-fill-available;
+    align-items: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px
+}
+#tinggi{
+    width: -webkit-fill-available;
+    align-items: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px
+}
+.action{
+    padding:10px;
+}
+
+/* perhitungan keliling */
+
+#sisi1 ,#sisi2 ,#sisi3{
+    width: -webkit-fill-available;
+    align-items: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px
+}
+.action{
+    padding:10px;
+}
+
+#rumuskelilingsegitiga , #carakelilingsegitiga , #hasilkelilingsegitiga {
+    padding-left: 20px;
+}
+
+/* style tombol hitung dan resset */
+
+.hitung{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hitung>button{
+    background-color:cornflowerblue;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+.resset{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin:10px;
+}
+.resset > button{
+    background-color: orange;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+/* JAJAR GENJANG */
+
+/* style header */
+.menu2{
+    text-align: center;
+}
+
+.menu2 {
+    display: grid;
+    color:white;
+
+}
+.segitiga2{
+    display: block;
+    color:cornflowerblue;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+.jajargenjang2{
+    background-color: cornflowerblue;
+    display: block;
+    color:aliceblue;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom:20PX;
+   
+    
+}
+
+/* style deskripsi */
+.card2 {
+    display: block;
+    border: solid cornflowerblue 1px;
+    box-shadow: -7px 8px 10px -2px rgba(0,0,0,0.8);
+
+    
+}
+
+.juduljajargenjang{
+    background-color: cornflowerblue;
+    padding: 0px;
+    margin: 0px;
+    /* align-content: center; */
+    text-align: center;
+    display: grid;
+    color: white;
+    padding: 10px;
+}
+
+.imgjajargenjang{
+    display: block;
+    margin:auto;
+    width:500px;
+    height: 300px;
+}
+.description2{
+    padding :10px;
+}
+.rumus2{
+    text-align: center;
+    font-weight: bold;
+}
+hr{
+    border-color: lightgrey;
+}
+
+/* style perhitungan */
+.hitungluasjajargenjang{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+#alas ,#alas2 ,#alas3{
+    width: -webkit-fill-available;
+    align-items: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px
+}
+#tinggi,#tinggi2 , #tinggi3{
+    width: -webkit-fill-available;
+    align-items: center;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 0px 0px 0px 20px;
+    border-radius: 5px
+}
+.action2{
+    padding:10px;
+}
+
+/* style tombol hitung dan resset */
+
+.hitung2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hitung2>button{
+    background-color: cornflowerblue;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+.resset2{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin:10px;
+}
+.resset2 > button{
+    background-color: orange;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+/* footer */
+footer{
+    padding: 10px 20px;
+    background-color:cornflowerblue;
+    display: block;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+ul{
+    margin-right: 0%;
+    display: flex;
+}
+li{
+    margin:auto;
+    margin-left: 0px;
+    color:aliceblue;
+    
+}
